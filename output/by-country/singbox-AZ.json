@@ -5,24 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇴 哥伦比亚 (Colombia) 01 - xiaohe",
-      "server": "157.137.209.135",
-      "server_port": 62145,
-      "uuid": "8fb65472-5957-4f64-ba2d-b5812b2f155a"
+      "tag": "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - xiaohe",
+      "server": "basalam.horqen.ir",
+      "server_port": 21289,
+      "uuid": "c12db015-a63c-43e5-a744-6398a90373b5"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇴 哥伦比亚 (Colombia) 01 - xiaohe"
+        "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇴 哥伦比亚 (Colombia) 01 - xiaohe"
+        "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
