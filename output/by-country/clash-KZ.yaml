@@ -5,23 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: 50.62.89.123
-  port: 443
+  server: 108.162.198.178
+  port: 2095
   udp: true
   type: vless
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  tls: true
-  servername: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /Telegram-WangCai2🇨🇳
+    path: /
     headers:
-      Host: notls.lukongtou.eu.org
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  server: 172.64.52.6
-  port: 80
+  server: 162.159.45.19
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: '/?ed=2560security=tls '
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+  server: 162.159.38.127
+  port: 2052
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -30,7 +37,7 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
   server: 62.233.39.9
   port: 8443
   udp: true
@@ -44,25 +51,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  server: 178.236.16.98
-  port: 35728
-  udp: true
-  type: vless
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
-  tls: true
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-    short-id: 69a2
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
-  server: 94.198.220.183
-  port: 64674
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: s8LbJCgUiGXeCKVc63tHJP
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,7 +60,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,6 +69,5 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
 rules:
 - MATCH,PROXIES
