@@ -19,6 +19,20 @@ proxies:
   grpc-opts:
     grpc-service-name: TunService
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+  server: 104.21.67.236
+  port: 443
+  udp: true
+  type: vless
+  uuid: 96e341a7-3077-4613-b482-41bd9c90cc4d
+  tls: true
+  servername: eZaCCesS-proJEcT-4C7950.Ez-dC9bBB.WorKErs.dEV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
+- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
   server: 156.226.168.221
   port: 35193
   udp: true
@@ -31,14 +45,6 @@ proxies:
     short-id: e8daed2d
   servername: www.apple.com
   client-fingerprint: ios
-- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
-  server: 185.79.138.71
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
-  sni: hopp-legend-se.roxa.org
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

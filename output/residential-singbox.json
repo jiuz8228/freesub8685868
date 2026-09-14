@@ -13,43 +13,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-      "server": "wwbqwqqnlyydssc.cfooov.xyz",
-      "server_port": 39817,
-      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇯🇵 日本 (Japan) 02 (家宽) - xiaohe",
+      "server": "109.120.155.155",
+      "server_port": 444,
+      "uuid": "99ab6748-3d57-4562-9451-843c15960b9b",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uzaav8KrDeu1P9qdg6fDfxmq9Z6vV6a-WVPTWX1zIj4",
-          "short_id": "0044d4f490e795b8"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
-      "server": "dlbgwqqngrjbwan.jiedddym.com",
-      "server_port": 42868,
-      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GLtdhq3ZSKYlJv62ye5dFKfjI3UF9mBIGOl5ms75rVA",
-          "short_id": "747a75eb5ecef8"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
         }
       }
     },
@@ -59,8 +40,7 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe"
+        "🇯🇵 日本 (Japan) 02 (家宽) - xiaohe"
       ]
     },
     {
@@ -68,8 +48,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe"
+        "🇯🇵 日本 (Japan) 02 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
