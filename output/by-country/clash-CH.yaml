@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: usa.oblaco.bet
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   server: 82.38.64.229
   port: 8443
@@ -25,6 +25,18 @@ proxies:
   sni: hopp-swizland-new.mysynology.net
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
+  server: 138.124.9.108
+  port: 443
+  udp: true
+  type: vless
+  uuid: c795bdd5-0460-42bd-927b-fbff154d2ab5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ssz8kvl1tH0TUaFREVSV_X-ED0AR-eeaWpKg2jQM8D8
+  servername: gag.fl2.iki-servers.com
+  client-fingerprint: safari
+- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
   server: 151.242.2.81
   port: 443
   udp: true
@@ -33,26 +45,12 @@ proxies:
   tls: true
   servername: cf9.rumedia-cdn.com
   skip-cert-verify: false
+  client-fingerprint: qq
   network: ws
   ws-opts:
     path: /cdn/v3/live
     headers:
       Host: cf9.rumedia-cdn.com
-- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  server: 199.232.249.220
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
-  tls: true
-  servername: global.fastly.com
-  skip-cert-verify: false
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sardach3.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
