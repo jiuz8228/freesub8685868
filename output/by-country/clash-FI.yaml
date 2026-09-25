@@ -13,6 +13,7 @@ proxies:
   tls: true
   servername: assets-fi.pleiades.codes
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
@@ -29,17 +30,13 @@ proxies:
   servername: www.google.com
   client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: est1313.ggisopi.su
-  port: 443
+  server: iq5ny.pleiades.codes
+  port: 8443
   udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
-  client-fingerprint: chrome
+  type: hysteria2
+  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  sni: iq5ny.pleiades.codes
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: me6.movieseryalirani.ir
   port: 57361
