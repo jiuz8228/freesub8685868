@@ -4,21 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-      "server": "45.158.185.172",
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "server": "fujrdt.d6f54hd1j.cc",
       "server_port": 443,
-      "uuid": "49e4b91a-bd15-4e54-9b51-41a3380afb51",
+      "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "z5n1.vpnpolar.online",
+        "server_name": "fujrdt.d6f54hd1j.cc",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/beeline",
+        "path": "/",
         "headers": {
-          "Host": "z5n1.vpnpolar.online"
+          "Host": "fujrdt.d6f54hd1j.cc"
         }
       }
     },
@@ -27,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

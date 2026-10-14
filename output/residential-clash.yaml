@@ -4,31 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  server: 45.158.185.172
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  server: fujrdt.d6f54hd1j.cc
   port: 443
   udp: true
-  type: vless
-  uuid: 49e4b91a-bd15-4e54-9b51-41a3380afb51
+  type: vmess
+  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: z5n1.vpnpolar.online
+  servername: fujrdt.d6f54hd1j.cc
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /beeline
+    path: /
     headers:
-      Host: z5n1.vpnpolar.online
+      Host: fujrdt.d6f54hd1j.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
