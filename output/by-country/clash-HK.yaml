@@ -16,8 +16,16 @@ proxies:
     public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
     short-id: ca4aedd4
   servername: www.amazon.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   server: 202.146.222.89
   port: 443
   udp: true
@@ -25,36 +33,15 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 202.146.222.89
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  server: 50.7.44.28
-  port: 2091
-  udp: true
-  type: vless
-  uuid: 76b6a658-ce80-4500-b24d-404c94639ac6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
-    short-id: 08a4b1f473932632
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üá®üá≥
+  sni: speedtest.tinkoff.ru
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   server: hk2.open-bridonyx.top
   port: 443
   udp: true
@@ -67,6 +54,19 @@ proxies:
     short-id: 3b74d85e
   servername: hk2.open-bridonyx.top
   client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  server: 50.7.44.28
+  port: 2091
+  udp: true
+  type: vless
+  uuid: 76b6a658-ce80-4500-b24d-404c94639ac6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
+    short-id: 08a4b1f473932632
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
   server: 103.238.227.211
   port: 21003
