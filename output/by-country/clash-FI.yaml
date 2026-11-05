@@ -29,7 +29,7 @@ proxies:
   servername: videos.porsche.com
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 188.114.96.3
+  server: 172.66.0.1
   port: 2053
   udp: true
   type: trojan
