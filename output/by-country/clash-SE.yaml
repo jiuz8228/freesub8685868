@@ -55,6 +55,7 @@ proxies:
   tls: true
   servername: volumestyle.komediyatorg.net
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /media/ws/
@@ -67,7 +68,7 @@ proxies:
   tls: true
   servername: depotchannel.lucheeebezlimitnoekino.stream
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: edge
   network: ws
   ws-opts:
     path: /media/ws/
