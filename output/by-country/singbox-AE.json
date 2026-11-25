@@ -6,18 +6,26 @@
     {
       "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
-      "server": "151.241.19.29",
+      "server": "151.241.19.36",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-      "server": "151.241.19.36",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "server": "94.183.167.172",
+      "server_port": 443,
+      "uuid": "d7121b33-e335-4921-bb00-4c0b157e7fc1",
+      "tls": {
+        "enabled": true,
+        "server_name": "s8k4.scan-cdn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "type": "vless",
@@ -43,23 +51,24 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-      "server": "95.174.68.188",
-      "server_port": 14430,
-      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
       "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
+      "server": "151.241.19.29",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "selector",

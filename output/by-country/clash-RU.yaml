@@ -5,13 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 90.156.203.62
-  port: 5112
+  server: 147.45.221.225
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
+  type: vless
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  tls: true
+  servername: nl.lucheeebezlimitnoekino.stream
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /media/ws/
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 136.148.83.69
+  port: 443
+  udp: true
+  type: vless
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  tls: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 201.24.116.192
   port: 443
   udp: true
@@ -24,30 +39,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 136.148.83.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  skip-cert-verify: false
-  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 147.45.221.225
+  server: 200.169.179.233
   port: 443
   udp: true
   type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   tls: true
-  servername: nl.lucheeebezlimitnoekino.stream
+  servername: vps3.nemnogogo.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /media/ws/
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 147.45.175.81
+  server: xssite.webredirect.org
   port: 443
   udp: true
   type: vless
@@ -59,19 +65,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 213.171.24.52
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9df9ee1a-0671-4c6c-93c7-65598fb946f7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NLshsrwmeg_cL7kbLW4sqMfl_Xo6vCOOcB5NcmYhDyE
-    short-id: 32cbd8937afcd477
-  servername: sbrussia1.richhoodfoc.com
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,7 +75,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,6 +85,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 rules:
 - MATCH,PROXIES
